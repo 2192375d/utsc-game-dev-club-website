@@ -5,5 +5,6 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+  base: "/utsc-game-dev-club-website/",
 })
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function About() {
 
   return (
@@ -52,7 +54,7 @@ export default function About() {
       </ul>
 
       <h2>Current State</h2>
-      <p>The club is relatively new, we are still in the stage of gathering up more people and networking. In the mean time, feel free to join the Discord server under CONTACT!</p>
+      <p>The club is relatively new, we are still in the stage of gathering up more people and networking. In the mean time, feel free to join the Discord server under <Link to="/Contact">CONTACT</Link>!</p>
     </>
   )
 }
