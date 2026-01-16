@@ -1,5 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Home from './pages/home'
+import NavigationBar from "./components/NavigationBar";
+import Home from './pages/Home'
+import About from './pages/About';
+import Contact from './pages/Contact'
 import './App.css'
 
 function App() {
@@ -17,8 +20,12 @@ function App() {
         boxShadow: "0 16px 40px var(--color-shadow)",
         boxSizing: "border-box"
       }}>
+
+        <NavigationBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </>
